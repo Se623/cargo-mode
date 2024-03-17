@@ -79,7 +79,6 @@
 
 (define-derived-mode cargo-mode compilation-mode "Cargo"
   "Major mode for the Cargo buffer."
-  (setq buffer-read-only t)
   (setq-local truncate-lines t))
 
 (defun cargo-mode--fetch-cargo-tasks (project-root)
